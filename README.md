@@ -8,7 +8,7 @@ Agent playing the Google Chrome Dino Game on the website: https://chromedino.com
 
 3. pytesseract:
    * follow the pytesseract tutorial to install the tesseract executable: https://www.youtube.com/watch?v=4DrCIVS5U3Y
-   * edit the [env_config.ini][env_config.ini] file in order to give it your own tesseract executable path
+   * edit the [env_config.ini](env_config.ini) file in order to give it your own tesseract executable path
 
 4. chromedriver:
    - verify which chrome version do you have: [link](https://www.howtogeek.com/299243/WHICH-VERSION-OF-CHROME-DO-I-HAVE/)
