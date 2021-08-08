@@ -1,12 +1,10 @@
 from configparser import ConfigParser
 
 import numpy as np
+import pytesseract
 from PIL import Image
 from collections import deque
 import matplotlib.pyplot as plt
-
-# tesseract setup tutorial: https://www.youtube.com/watch?v=4DrCIVS5U3Y
-import pytesseract
 
 
 class GameCanvasQueue():
