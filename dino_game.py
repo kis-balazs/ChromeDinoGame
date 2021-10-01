@@ -12,6 +12,7 @@ from player import ActionType
 from player import PlayerAgent
 
 
+# korte
 class ChromeDinoGame:
     """class for interacting with the game. Uses:
         - image_processing/GameCanvasQueue
