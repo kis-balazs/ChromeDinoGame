@@ -63,7 +63,7 @@ class CanvasProcessing:
 
         try:
             score = int(score_text)
-        except:
+        except ValueError:
             score = 0
         return score
 
@@ -84,8 +84,8 @@ class CanvasProcessing:
             config='--psm 10 --oem 3 -c tessedit_char_whitelist=GAMEOVER'
         )
         # print(game_over_text)
-        GO = 'GAMEOVER'
-        return sum([ch in game_over_text for ch in list(GO)]) > len(GO) // 2
+        game_over = 'GAMEOVER'
+        return sum([ch in game_over_text for ch in list(game_over)]) > len(game_over) // 2
 
     @staticmethod
     def visualize(img: Image):

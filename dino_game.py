@@ -6,7 +6,6 @@ from selenium import webdriver
 from selenium.webdriver.remote.webelement import WebElement
 
 from image_processing import CanvasProcessing
-#
 from image_processing import GameCanvasQueue
 from player import ActionType
 from player import PlayerAgent
@@ -102,6 +101,7 @@ class ChromeDinoGame:
             ActionType.JUMP
         )
 
+        canvas_image = self.__get_game_canvas()
         while not self.game_over:
             canvas_image = self.__get_game_canvas()
             self.gcq.append(canvas_image)
@@ -115,9 +115,10 @@ class ChromeDinoGame:
                 break
 
             # --- uncomment if intermediary score needed ---
-            # self.score = self.cp.extract_score(
-            # 	canvas_image
-            # )
+            self.score = self.cp.extract_score(
+                canvas_image
+            )
+            print("Intermediary score:", self.score)
 
             # #######
             # IP & scenario categorization
